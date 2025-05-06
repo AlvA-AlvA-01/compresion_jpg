@@ -895,6 +895,8 @@
             
             \textit{Ejemplo de matriz de cuantificación estándar (luminancia):}
             
+            \label{matriz:Q}
+            
             \[
             Q =
             \begin{bmatrix}
@@ -926,6 +928,7 @@
         \centering
         \includegraphics[width=\linewidth]{original.jpg}
         \caption{Imagen original\\(Alta calidad)}
+          \label{fig:original} %
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\linewidth}
@@ -1011,14 +1014,33 @@
 
 \section*{Anexo}
 
-\begin{flushleft}
-\textbf{Repositorio:} \\
-\url{https://github.com/AlvA-AlvA-01/compresion_jpg.git}
+    \begin{flushleft}
+    
+         \item\textcolor{blue}{\href{https://github.com/AlvA-AlvA-01/compresion_jpg.git}{Repositorio}}
 
 \vspace{1em}
 
-\textbf{Código Python, compresión forma CDT y error:} \\
-\url{https://colab.research.google.com/drive/1lGXB7AodEpYaurUzqtMokQTkveHA1I1E#scrollTo=LLP_5Rn6CWU0}
+         \item\textcolor{blue}{\href{https://colab.research.google.com/drive/1lGXB7AodEpYaurUzqtMokQTkveHA1I1E}{Código Python, compresión forma CDT y error de compresión.}}
+
+         \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\linewidth]{codigo1.png}
+                \caption*{Resultado del análisis de error de compresión de la imagen 
+                    \textcolor{blue}{\hyperref[fig:original]{a y b.}}}
+            \end{figure}
+
+\vspace{1em}
+
+         \item\textcolor{blue}{\href{https://colab.research.google.com/drive/16i22DwAQEefmN9jHfF1v3YCU5J3PY7jS}{Código Python, Error de compresión vs. número de coeficientes DCT conservados.}}
+
+        \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.9\linewidth]{codigo2.png}
+                \captionsetup{skip=2pt}
+                \caption*{Gráfica de la perdida de datos por el numero de coeficientes DCT conservados de la 
+                \textcolor{blue}{\hyperref[matriz:Q]{matriz \( Q \)}}}
+            \end{figure}
+         
 \end{flushleft}
         
     \begin{thebibliography}{00}
